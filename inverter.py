@@ -19,7 +19,7 @@ def load_mirror():
         return json.load(mirror_file)
 
 def invert(instruction, mirror):
-    """Returns the opposite (if exists) of an instructions."""
+    """Returns the opposite (if exists) of an instruction."""
     if instruction in mirror:
         return mirror[instruction]
     return instruction
