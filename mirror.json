@@ -1,0 +1,8 @@
+{
+    "add": "sub",
+    "sub": "add",
+    "rol": "ror",
+    "ror": "rol",
+    "inc": "dec",
+    "dec": "inc"
+}
