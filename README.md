@@ -3,12 +3,12 @@ A script for obtaining the inverse of simple, linear assembly sequences (contain
 
 Python version: 3.4.2
 
-Usage:
+*Usage*
 ```Bash
 py inverter.py input.asm
 ```
 .
-Example input:
+*Example*
 
 ```Assembly
 xor eax, 0x123
@@ -21,8 +21,11 @@ rol eax, 0x2
 ror ebx, 0x3
 add ebx, 0xff
 ```
-
-Result:
+<pre>
+  | |
+  | |
+  \ /
+</pre>
 
 ```Assembly
 sub ebx, 0xff
@@ -35,3 +38,6 @@ xchg ax, bx
 add eax, 0xad
 xor eax, 0x123
 ```
+
+*Coding standard*<br>
+[Google Python Style Guide](https://google.github.io/styleguide/pyguide.html).
