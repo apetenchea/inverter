@@ -7,7 +7,7 @@ Python version: 3.4.2
 ```Bash
 py inverter.py input.asm
 ```
-.
+
 *Example*
 
 ```Assembly
