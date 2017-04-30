@@ -13,16 +13,19 @@ import sys
 
 MIRROR_FILE = 'mirror.json'
 
+
 def load_mirror():
     """Returns a dict, mapping instuctions to opposite instructions."""
     with open(MIRROR_FILE) as mirror_file:
         return json.load(mirror_file)
+
 
 def invert(instruction, mirror):
     """Returns the opposite (if exists) of an instruction."""
     if instruction in mirror:
         return mirror[instruction]
     return instruction
+
 
 def main():
     """Entry point."""
@@ -42,4 +45,6 @@ def main():
         instruction[0] = invert(instruction[0], mirror)
         print(' '.join(instruction))
 
-main()
+
+if __name__ == "__main__":
+    main()
