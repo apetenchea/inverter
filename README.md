@@ -25,6 +25,7 @@ add ebx, 0xff
   | |
   | |
   \ /
+   V
 </pre>
 
 ```Assembly
